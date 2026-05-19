@@ -35,22 +35,4 @@ print(False and 'tommy') #False
 print('[]'and False) #False
 print([] and False) #[]
 
-#HOW PYTON DOCS DESCRIBES AND and OR:
-#for And[#the following code is as same as 'x AND y' with the following x and y values]
-x=input('enter your input from True/False:') #taking the True or false input from user.
-y='tommy' #a fixed input
-if x=='False':
-    print(x)
-else:
-    print(True)     
 
-#for Or[the following code is as same as 'x or y' with following x and y values]
-x=input('enter your input from these choise: True/False:')
-y=input('enter your input from these choise: True/False:')
-if x=='False':
-    if y=='False':
-        print(False)
-    else:
-        print(True)
-if x=='True':
-    print(y)                
