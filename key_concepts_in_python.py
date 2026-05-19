@@ -28,11 +28,11 @@ print(False or 'tommy') #'tommy'
 print('[]'or False) #'[]'
 print(False or '[]') #'[]'
 
-#SPECIAL CASE OF 'AND': If the first value is false, AND returns it, and if it is true, it checks the other value and returns the output:
+#SPECIAL CASE OF 'AND': If the first value is false, AND returns it, and if it is true, it checks the other value, if all the values are true, it returns the second one..Basically, it finds the first falsy value, if it find it at the second value, it will return false or the second value
 print(0 and 1) #0
 print('hey' and 'hi') #'hi'
 print(False and 'tommy') #False
 print('[]'and False) #False
 print([] and False) #[]
 
-
+          
