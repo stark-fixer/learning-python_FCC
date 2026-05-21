@@ -174,11 +174,4 @@ print(Subjects(2))#Subject.CHEMISTRY
 print(Subjects['MATHS'].value)#3
 
 
-#USER INPUTS:
-#for example
-print('what\'s your favourite subject? ')
-fav_subject = input()
-print('your favourite subject is: '+fav_subject)
-#you can also do the same thing in this way:
-fav_subject  = input('what\'s your favourite subject? ')
-print('your favourite subject is: ',fav_subject)
+
