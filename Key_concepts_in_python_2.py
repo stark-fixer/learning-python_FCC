@@ -147,3 +147,38 @@ print(any('stark'))#True
 #basically the 'all' function returns True when all of the values are True within it. 
 print(all(['stark',True]))#True
 #print(all(["stark",False,0]))#False;since all values are not true
+
+#NUMBER DATA TYPES:
+num1=2+3j
+num = complex(3,4)#contructing a comlex number with the help of "complex" functtion, where, the first number(here 3) is the real part and the second number(here 4) is the imaginary part
+print(num)#3+4j
+print(num.real, num.imag)#It will give the real and imaginary part of the quantity stored in num as output
+
+#BUILT_IN FUNCTIONS:
+print(abs(-5.5))#5.5
+print(round(5.5))#6
+print(round(5.49,1))#instead of rounding it of to nearest integer, it will round it off to nearest tenth place i.e. 5.5
+
+#ENUMS:"an enumeration is a set of symbolic names (members) bound to unique, constant values. 
+# within an enumeration, the members can be compared by identity, and the enumeration itself can be iterated over."
+#for example:
+from enum import Enum
+class Subjects(Enum):
+    PHYSICS = 1
+    CHEMISTRY = 2
+    MATHS = 3
+
+print(Subjects.PHYSICS)#Subjects.Physics
+print(Subjects.PHYSICS.value)#1
+print(Subjects(2))#Subject.CHEMISTRY
+print(Subjects['MATHS'].value)#3
+
+
+#USER INPUTS:
+#for example
+print('what\'s your favourite subject? ')
+fav_subject = input()
+print('your favourite subject is: '+fav_subject)
+#you can also do the same thing in this way:
+fav_subject  = input('what\'s your favourite subject? ')
+print('your favourite subject is: ',fav_subject)
